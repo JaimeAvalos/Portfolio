@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Custom object creation using fucntion</title>
+	<script>
+
+		function displayProductDetails(){
+			document.write(this.ID+"<br/>");
+			document.write(this.Name+"<br/>");
+			document.write(this.Description+"<br/>");
+			document.write(this.Price+"<br/>");
+
+
+
+		function blogpost(title, text){
+
+			this.title = title;
+			this.text = text;
+			this.addCategory = addCategory;
+			this.displayBlogPost = displayBlogPost;
+		}
+
+		function addCategory(category){
+
+			this.category = category;
+		}
+
+
+		function displayBlogPost(){
+			document.write(this.title+"<br/>");
+			document.write(this.text+"<br/>");
+			document.write(this.category+"<br/>");
+
+
+		}
+
+		var = new prduct()
+
+
+		var bp1 = new blogpost("Jquery", "makes JS easier to use");
+		bp1.addCategory("UI Technology");
+		bp1.displayBlogPost();
+
+
+
+
+		var bp2 = new blogpost("somethign", "this is somethign else");
+		bp2.addCategory("UI Technology");
+		bp2.displayBlogPost();
+
+
+
+	</script>
+</head>
+
+
+	
+</body>
+
+</html>
